@@ -1,0 +1,10 @@
+version: "3"
+services:
+  backend:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./API:/API:z
+      - ./app:/app
+      - ./dependent:/dependent:z
